@@ -1,0 +1,197 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+.wrapper{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(90deg, rgba(255, 167, 0, 1) 0%, rgba(203, 55, 10, 1) 100%);
+    color: floralwhite;
+}
+h1{
+    padding-top:20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.switch-tab{
+    width:90%;
+    margin-top:4rem;
+    max-width:550px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tab{
+    cursor: pointer;
+    font-size:0.875rem;
+    letter-spacing: 1.75px;
+    padding:5px 8px;
+}
+.tab.currentTab{
+    border-radius:4px;
+    background-color:darkgrey ;
+}
+.weatherresultdisplay{
+    margin-block:4rem;
+  
+}
+.btn{
+    all: unset;
+    font-size:0.85rem;
+    padding:10px 30px;
+    background-color: darkgray;
+    text-transform: uppercase;
+    border-radius:5px;
+    cursor: pointer;
+    margin-bottom:10px;
+}
+.subprm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.permisiondisplay {
+    display: none; 
+}
+
+.permisiondisplay.active {
+    display: flex;
+}
+
+.permisiondisplay img{
+    margin-bottom: 2rem;
+    height:70px;
+    width:70px;
+}
+.permisiondisplay p:first-of-type{
+    font-size:1.75rem;
+    font-weight:600;
+}
+.permisiondisplay p:last-of-type{
+    font-size:0.85rem;
+    font-weight:500;
+    margin-top: 0.75rem;
+    margin-bottom:1.75rem;
+    letter-spacing:0.75px;
+}
+
+.loading-container{
+    display: none;
+}
+.loading-container.active{
+    display:flex;
+}
+.loading-container.p{
+    text-transform: uppercase;
+}
+
+
+.userinfocontainer {
+    display: none;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.userinfocontainer.active {
+    display: flex; 
+}
+
+.yourplacename{
+    display: flex;
+    align-items: center;
+    gap:0 0.5rem;
+    margin-bottom:1rem;
+}
+.userinfocontainer p{
+    font-size:1.5rem;
+    font-weight:200;
+}
+.userinfocontainer img{
+    height:90px;
+    width:90px;
+} 
+.yourplacename p{
+    font: size 2rem;
+}
+.yourplacename img{
+    height:30px;
+    width:30px;
+    object-fit: contain;
+}
+.userinfocontainer p[tempraturedisplay]{
+    font-size:2.75rem;
+    font-weight: 700;
+}
+.parametercontainer{
+    display: flex;
+    gap:10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem;
+}
+.parameter{
+    width:30%;
+    max-width:200px;
+    background-color:darkgray;
+    border-radius:5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:5px 0;
+    align-items: center;
+}
+.parameter img{
+    width:50px;
+    height:50px;
+}
+.parameter p:first-of-type{
+    font-size:1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.parameter p:last-of-type{
+    font-size:1rem;
+    font-weight:200;
+}
+
+.form-container{
+    display: none;
+    width:90%;
+    max-width:550px;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    gap:0 10px;
+    margin-bottom:3rem;
+}
+.form-container.active{
+    display: flex;
+}
+.form-container input{
+    all: unset;
+    width:calc(100% - 80px);
+    height:40px;
+    padding:0 20px;
+    background-color:rgba(219,226,239,0.5);
+    border-radius:10px;
+}
+ .form-container input::placeholder{
+    color:rgba(255,255,255,0.7);
+}
+.form-container input:focus{
+    outline:3px solid rgba(255,255,255,0.7);
+}
+.searchbutton{
+    padding: unset;
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:100%;
+    background-color:rgba(219,226,239,0.5);
+}
